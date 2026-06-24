@@ -1,6 +1,6 @@
 # vitesse.nvim
 
-a minimal light theme for neovim
+a minimal Neovim theme using Ghostty's Cursor Dark palette
 
 ## install
 
