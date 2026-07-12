@@ -1,6 +1,11 @@
 # cursor.nvim
 
-A minimal Neovim theme matching Ghostty's built-in Cursor Dark and Cursor Light palettes.
+A minimal Neovim port of Cursor's bundled Cursor Dark and Cursor Light themes.
+
+The palettes are mapped from Cursor's bundled `cursor-dark-color-theme.json` and
+`cursor-light-color-theme.json`, using their workbench `colors` and TextMate
+`tokenColors`. Cursor's translucent editor colors are composited against the
+corresponding editor background for Neovim.
 
 ## Install
 
