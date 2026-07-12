@@ -13,17 +13,17 @@ function M.load()
     vim.cmd("hi clear")
   end
 
-  vim.g.colors_name = "vitesse"
+  vim.g.colors_name = "cursor-dark"
   vim.o.termguicolors = true
 
-  local palette = require("vitesse.palette")
+  local palette = require("cursor-dark.palette")
   local colors = vim.deepcopy(palette.colors)
 
   if M.config.transparent then
     colors.bg = "NONE"
   end
 
-  require("vitesse.highlights").setup(colors)
+  require("cursor-dark.highlights").setup(colors)
 end
 
 return M

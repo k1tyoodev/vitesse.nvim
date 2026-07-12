@@ -1,30 +1,28 @@
-# vitesse.nvim
+# cursor.nvim
 
-a minimal Neovim theme using Ghostty's Cursor Dark palette
+A minimal Neovim theme matching Ghostty's built-in Cursor Dark and Cursor Light palettes.
 
-## install
+## Install
 
 ```lua
--- lazy.nvim
 {
-  "k1tyoodev/vitesse.nvim",
+  "k1tyoodev/cursor.nvim",
   lazy = false,
   priority = 1000,
   config = function()
-    vim.cmd.colorscheme("vitesse")
+    vim.cmd.colorscheme(vim.o.background == "light" and "cursor-light" or "cursor-dark")
   end,
 }
 ```
 
-## options
+## Options
 
 ```lua
-require("vitesse").setup({
-  transparent = false,
-})
+require("cursor-dark").setup({ transparent = false })
+require("cursor-light").setup({ transparent = false })
 ```
 
-## supported plugins
+## Supported plugins
 
 - [blink.cmp](https://github.com/Saghen/blink.cmp)
 - [flash.nvim](https://github.com/folke/flash.nvim)
